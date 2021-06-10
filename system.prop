@@ -149,5 +149,5 @@ ro.sf.lcd_density=480
 # Permissions
 ro.control_privapp_permissions=log
 
-#WaveOS Device Name
-ro.wave.device_name=realme G35 Series
+#aospOS Device Name
+ro.aosp.device_name=realme G35 Series

@@ -24,6 +24,7 @@ $(call inherit-product, device/realme/RMX2185/device.mk)
 # Inherit some AOSP OS stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, vendor/aosp/configs/common.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_RMX2185
