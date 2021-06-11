@@ -22,8 +22,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Call proprietary blob setup
 $(call inherit-product-if-exists, vendor/realme/RMX2185/RMX2185-vendor.mk)
 
-# Parts
-$(call inherit-product-if-exists, packages/apps/RealmeParts/parts.mk)
+# RealmeParts
+$(call inherit-product, packages/apps/RealmeParts/parts.mk)
+
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -152,3 +153,10 @@ PRODUCT_PACKAGES += \
 
 # Inherit System props
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+#Realme parts
+PRODUCT_COPY_FILES += \
+    packages/apps/RealmeParts/init/cabc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cabc.rc
+
+
+
